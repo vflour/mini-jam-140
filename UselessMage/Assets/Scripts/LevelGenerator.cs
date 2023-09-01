@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LevelGenerator : MonoBehaviour
 {
@@ -9,11 +10,15 @@ public class LevelGenerator : MonoBehaviour
 
     public int minSize = 50;
     public int maxSize = 300;
-    Dictionary<string,GameObject> Rooms;
+    public Dictionary<string,GameObject> Rooms;
+
+    public UnityEvent OnRoomsGenerated;
+
     // Start is called before the first frame update
     void Start()
     {
         GenerateLevel();
+        OnRoomsGenerated.Invoke();
     }
 
     void GenerateLevel(){
