@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     public GameObject[] roomPrefabs;
-    public int roomSize = 10;
+    public float roomSize = 10;
 
     public int minSize = 50;
     public int maxSize = 300;
@@ -29,17 +29,10 @@ public class LevelGenerator : MonoBehaviour
         Rooms.Add(GetKey(currentRoom.transform),currentRoom);
         SpawnRoom(currentRoom);
         Debug.Log(Rooms.Count);
-        //if(!(Rooms.Count > minSize && Rooms.Count < maxSize)){
-        //    foreach (Transform t in this.transform){
-        //        Destroy(t.gameObject);
-        //    }
-        //    Debug.Log("Not within bounds, restarting.");
-        //    GenerateLevel();
-        //}
     }
     string GetKey(Transform t){
-        int x = (int)(t.position.x/roomSize);
-        int y = (int)(t.position.y/roomSize);
+        int x = (int)((t.position.x*32)/roomSize);
+        int y = (int)((t.position.y*32)/roomSize);
         string key = x + "_" + y;
         return key;
     }
@@ -75,10 +68,10 @@ public class LevelGenerator : MonoBehaviour
         foreach (Transform t in parent){
             if(t.tag == "SpawnPoint"){
                 string key = GetKey(t);
-                if(!Rooms.ContainsKey(key))
+                if(!Rooms.ContainsKey(key) && Rooms.Count < maxSize)
                 {
                     GameObject currentRoom = Instantiate(GetRoom(t.GetComponent<DirID>().Dir),this.transform);
-                    currentRoom.transform.position = t.position;
+                    currentRoom.transform.position = new Vector3(t.position.x,t.position.y,t.position.y);
                     Rooms.Add(key,currentRoom);
                     SpawnRoom(currentRoom); 
                 }
