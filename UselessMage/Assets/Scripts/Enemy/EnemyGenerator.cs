@@ -6,20 +6,26 @@ public class EnemyGenerator : MonoBehaviour
 {
     public LevelGenerator levelGenerator;
     public GameObject[] enemyPrefabs;
-    public int maxEnemiesPerRoom = 3;
 
-    public void GenerateEnemy(GameObject enemyPrefab, GameObject roomAsset)
+    public void GenerateEnemy(GameObject enemyPrefab, RoomEnemyData roomData)
     {
-        var enemy = Instantiate(enemyPrefab, roomAsset.transform);
+        var position = roomData.GetRandomPosition();
+        var enemy = Instantiate(enemyPrefab, roomData.transform);
+        enemy.transform.localPosition = position;
+        
+        roomData.enemyCount++;
     }
 
     public void GenerateEnemiesForRoom(string roomId, GameObject roomAsset)
     {
+        RoomEnemyData roomData = roomAsset.GetComponent<RoomEnemyData>(); 
+        if (roomData == null) return;
+        var enemiesPerRoom = roomData.maxEnemyCount - roomData.enemyCount;
 
-        for (int i = 0; i < maxEnemiesPerRoom; i++)
+        for (int i = 0; i < enemiesPerRoom; i++)
         {
             var randomEnemy = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)]; 
-            GenerateEnemy(randomEnemy, roomAsset);
+            GenerateEnemy(randomEnemy, roomData);
         }
 
     }
