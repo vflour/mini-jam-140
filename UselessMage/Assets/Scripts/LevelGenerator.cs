@@ -7,7 +7,7 @@ public class LevelGenerator : MonoBehaviour
 {
     public GameObject[] roomPrefabs;
     public float roomSize = 10;
-
+    public string roomPath = "Rooms/Thicket";
     public int minSize = 50;
     public int maxSize = 300;
     public Dictionary<string,GameObject> Rooms;
@@ -26,7 +26,7 @@ public class LevelGenerator : MonoBehaviour
         //RIGHT = 2
         //DOWN = 3
         //LEFT = 4
-        roomPrefabs = Resources.LoadAll<GameObject>("Rooms/");
+        roomPrefabs = Resources.LoadAll<GameObject>(roomPath);
         
         GameObject currentRoom = Instantiate(roomPrefabs[0],this.transform);
         currentRoom.transform.position = new Vector3(0,0,0);
@@ -76,7 +76,7 @@ public class LevelGenerator : MonoBehaviour
                 if(!Rooms.ContainsKey(key) && Rooms.Count < maxSize)
                 {
                     GameObject currentRoom = Instantiate(GetRoom(t.GetComponent<DirID>().Dir),this.transform);
-                    currentRoom.transform.position = new Vector3(t.position.x,t.position.y,t.position.y);
+                    currentRoom.transform.position = new Vector3(t.position.x,t.position.y,t.position.y/100);
                     Rooms.Add(key,currentRoom);
                     SpawnRoom(currentRoom); 
                 }
