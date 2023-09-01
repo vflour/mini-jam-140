@@ -12,20 +12,116 @@
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
-        "Map Parts/Thicket/corner top left.tmx": {
+        "Map Parts/Ice Caves/ice corner top left.tmx": {
             "scale": 3,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 79.83333333333333,
+                "y": 79.66666666666666
+            }
+        },
+        "Map Parts/Ice Caves/square1 ice.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 77.83333333333333,
+                "y": 73
+            }
+        },
+        "Map Parts/Ice Caves/uwu.tmx": {
+            "scale": 3.4912499999999995,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 78.5,
-                "y": 81.16666666666666
+                "x": 79.77085571070535,
+                "y": 79.91407089151451
+            }
+        },
+        "Map Parts/Thicket/corner bottom left.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 79.16666666666666,
+                "y": 77
+            }
+        },
+        "Map Parts/Thicket/corner bottom right.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 79.16666666666666,
+                "y": 78
+            }
+        },
+        "Map Parts/Thicket/corner top left.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 77.16666666666666,
+                "y": 79.33333333333333
+            }
+        },
+        "Map Parts/Thicket/corner top right.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 78.83333333333333,
+                "y": 78.33333333333333
+            }
+        },
+        "Map Parts/Thicket/dead end down.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 79.19799498746868,
+                "y": 79.34121016827785
+            }
+        },
+        "Map Parts/Thicket/dead end left.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 72.83333333333333,
+                "y": 78.33333333333333
+            }
+        },
+        "Map Parts/Thicket/dead end right.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 79.19799498746868,
+                "y": 79.34121016827785
+            }
+        },
+        "Map Parts/Thicket/dead end up.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 79.5,
+                "y": 71.33333333333333
+            }
+        },
+        "Map Parts/Thicket/hallway horizontal.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 78.83333333333333,
+                "y": 77
+            }
+        },
+        "Map Parts/Thicket/hallway vertical.tmx": {
+            "scale": 3,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 79.16666666666666,
+                "y": 70.66666666666666
             }
         },
         "Map Parts/Thicket/square1.tmx": {
             "scale": 3,
-            "selectedLayer": 0,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": 79.83333333333331,
-                "y": 86.16666666666666
+                "x": 78.83333333333333,
+                "y": 84.66666666666666
             }
         },
         "Tiles/thicket tiles.tsx": {
@@ -44,11 +140,13 @@
             "scaleInEditor": 1
         }
     },
-    "last.imagePath": "C:/Users/IceBr/Pictures/mack things/art/gamejams/dungeon/Tiles",
-    "map.fixedSize": false,
+    "last.imagePath": "C:/Users/IceBr/Pictures/mack things/art/gamejams/dungeon/UselessMage Tiled Project/Tiles",
+    "map.fixedSize": true,
+    "map.height": 16,
     "map.lastUsedFormat": "tmx",
-    "map.tileHeight": 14,
+    "map.tileHeight": 10,
     "map.tileWidth": 10,
+    "map.width": 16,
     "openFiles": [
         "Map Parts/Thicket/square1.tmx",
         "Tiles/thicket tiles.tsx",
@@ -56,11 +154,18 @@
     ],
     "project": "dungeon map.tiled-project",
     "recentFiles": [
+        "Map Parts/Ice Caves/uwu.tmx",
+        "Map Parts/Ice Caves/square1 ice.tmx",
+        "Map Parts/Ice Caves/ice corner top left.tmx",
         "Map Parts/Thicket/square1.tmx",
-        "Tiles/thicket tiles.tsx",
-        "Map Parts/Thicket/corner top left.tmx",
-        "grass.tsx",
-        "thicket tiles.tsx"
+        "Map Parts/Thicket/hallway vertical.tmx",
+        "Map Parts/Thicket/hallway horizontal.tmx",
+        "Map Parts/Thicket/dead end up.tmx",
+        "Map Parts/Thicket/dead end right.tmx",
+        "Map Parts/Thicket/dead end left.tmx",
+        "Map Parts/Thicket/dead end down.tmx",
+        "Map Parts/Thicket/corner top right.tmx",
+        "Map Parts/Thicket/corner top left.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
