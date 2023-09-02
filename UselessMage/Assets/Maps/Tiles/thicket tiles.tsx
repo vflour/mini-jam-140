@@ -210,7 +210,7 @@
   <image width="10" height="14" source="yellow carpet trim R.png"/>
  </tile>
  <tile id="60">
-  <image width="10" height="14" source="lava.png"/>
+  <image width="10" height="14" source="obsidian.png"/>
  </tile>
  <tile id="62">
   <image width="10" height="14" source="lava corner NW.png"/>
