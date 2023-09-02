@@ -6,13 +6,15 @@ public class EnemyGenerator : MonoBehaviour
 {
     public LevelGenerator levelGenerator;
     public GameObject[] enemyPrefabs;
+    public GameObject target;
 
     public void GenerateEnemy(GameObject enemyPrefab, RoomEnemyData roomData)
     {
         var position = roomData.GetRandomPosition();
         var enemy = Instantiate(enemyPrefab, roomData.transform);
         enemy.transform.localPosition = position;
-        
+        enemy.GetComponent<Enemy>().target = target;
+
         roomData.enemyCount++;
     }
 
