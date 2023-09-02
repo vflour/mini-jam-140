@@ -9,6 +9,7 @@ public class GameData : MonoBehaviour
     public static GameData Instance;
 
     public string CurrentLevel;
+    public bool[] collectedWands = new bool[] {true,false,false,false};
 
     private void Awake()
     {
@@ -20,4 +21,5 @@ public class GameData : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
 }
