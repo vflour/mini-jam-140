@@ -22,8 +22,8 @@ public class PlayerLogic : MonoBehaviour
     void Update()
     {
         movementDirection = new Vector2(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"));
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        aoeRadiusGFX.transform.position = mousePosition;
+        //Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //aoeRadiusGFX.transform.position = mousePosition;
     }
 
     void FixedUpdate() {

@@ -17,19 +17,6 @@ public class aoeLogic : MonoBehaviour
         ContactFilter2D filter = new ContactFilter2D().NoFilter();
         List<Collider2D> results = new List<Collider2D>();
         Physics2D.OverlapCollider(coll,filter,results);
-
-        timer++;
-        if (timer > coolDown){
-            foreach(Collider2D c in results){
-                //if(c.tag == "Enemy"){
-                //Enemy enemy = c.gameObject.GetComponent<Enemy>();
-                //enemy.Annoyance += WandAnnoyance;
-                //enemy.Stun = stunStrength;
-                //enemy.KnockBack = knockBack;
-            //}
-            timer = 0;
-        }
-    }
     }
     
     public void ToggleEnabled(bool enabled)
@@ -51,7 +38,6 @@ public class aoeLogic : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D c)
     {
-        Debug.Log(c);
         if(c.tag == "Enemy"){
             Enemy enemy = c.gameObject.GetComponent<Enemy>();
             enemy.Annoyance += WandAnnoyance;
