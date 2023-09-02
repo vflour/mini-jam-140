@@ -89,7 +89,6 @@ public class Enemy : MonoBehaviour
         set 
         {
             bool hit = _annoyance <= value;
-            Debug.Log(_annoyance);
             _annoyance = Mathf.Clamp(value, 0, maxAnnoyance);
             
             if (!hit) return;
