@@ -17,6 +17,7 @@ public class DialogManager : MonoBehaviour
     {
         dialogUI.nextButton.onClick.AddListener(OnNextButtonPressed);
         dialogUI.closeButton.onClick.AddListener(Stop);
+        dialogUI.skipButton.onClick.AddListener(Stop);
         dialogUI.Hide();
     }
 

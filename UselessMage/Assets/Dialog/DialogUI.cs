@@ -13,6 +13,7 @@ public class DialogUI : MonoBehaviour
     public TMP_Text dialogText;
     public Button nextButton;
     public Button closeButton;
+    public Button skipButton;
 
     public AudioSource dialogAudioSource;
 
