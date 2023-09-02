@@ -11,6 +11,7 @@ public class DialogManager : MonoBehaviour
     public bool debugLoad;
     private DialogChain currentDialogChain;
     private int currentIndex;
+    private int currentVariant = -1;
 
     public void Start()
     {
@@ -31,7 +32,8 @@ public class DialogManager : MonoBehaviour
         {
             dialogUI.SetData(
                 currentDialogChain.data[currentIndex],
-                currentDialogChain.data.Count - 1 == currentIndex
+                currentDialogChain.data.Count - 1 == currentIndex,
+                currentVariant
             );
         }
         else
@@ -45,6 +47,7 @@ public class DialogManager : MonoBehaviour
         if (debugLoad)
         {
             debugLoad = false;
+            IncrementVariant();
             Load(debugDialogChainScriptableObject);
         }
     }
@@ -55,6 +58,11 @@ public class DialogManager : MonoBehaviour
         currentDialogChain = dialogChain;
         dialogUI.Show();
         LoadLine();
+    }
+
+    public void IncrementVariant()
+    {
+        currentVariant++;
     }
 
     public void Stop()

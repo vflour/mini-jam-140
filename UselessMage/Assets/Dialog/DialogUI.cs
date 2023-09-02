@@ -19,6 +19,7 @@ public class DialogUI : MonoBehaviour
     DialogItem currentDialogItem;
     private float dialogTextTime;
     private float dialogTextDeltaTime;
+    private int currentVariantIndex;
 
     public void Update()
     {
@@ -44,21 +45,21 @@ public class DialogUI : MonoBehaviour
 
     private string GetCurrentLine()
     {
-        // todo: implement variants
-        return currentDialogItem.lineVariants[0].lineString;
+        return currentDialogItem.lineVariants[currentVariantIndex].lineString;
     }
 
-    public void SetData(DialogItem dialogItem, bool lastLine)
+    public void SetData(DialogItem dialogItem, bool lastLine, int variant)
     {
         currentDialogItem = dialogItem;
         dialogTextDeltaTime = 0;
         dialogActorUILeft.SetData(dialogItem.leftActor);
         dialogActorUIRight.SetData(dialogItem.rightActor);
         dialogText.text = string.Empty;
-        if (dialogItem.lineVariants[0].lineClip)
+        currentVariantIndex = variant % dialogItem.lineVariants.Count;
+        if (dialogItem.lineVariants[currentVariantIndex].lineClip)
         {
             dialogAudioSource.Stop();
-            dialogAudioSource.clip = dialogItem.lineVariants[0].lineClip;
+            dialogAudioSource.clip = dialogItem.lineVariants[currentVariantIndex].lineClip;
             dialogAudioSource.Play();
             dialogTextTime = dialogAudioSource.clip.length;
         }
