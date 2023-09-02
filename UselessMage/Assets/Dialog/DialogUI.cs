@@ -64,7 +64,7 @@ public class DialogUI : MonoBehaviour
         }
         else
         {
-            dialogTextTime = 4;
+            dialogTextTime = 1;
         }
         nextButton.gameObject.SetActive(!lastLine);
         closeButton.gameObject.SetActive(lastLine);
