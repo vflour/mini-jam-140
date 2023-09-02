@@ -396,6 +396,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1225671521291591124, guid: ff7b526bc4036ae49bc2b304985683e1, type: 3}
   m_PrefabInstance: {fileID: 536646820}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1103819118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2298015980700165661, guid: ff7b526bc4036ae49bc2b304985683e1, type: 3}
+  m_PrefabInstance: {fileID: 536646820}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103819117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db55252e67ae773089d8874f46f3e0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1200645196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -562,6 +573,30 @@ PrefabInstance:
       propertyPath: hudUI
       value: 
       objectReference: {fileID: 536646821}
+    - target: {fileID: 2317740960681891246, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
+      propertyPath: onItemClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317740960681891246, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
+      propertyPath: onItemClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1103819118}
+    - target: {fileID: 2317740960681891246, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
+      propertyPath: onItemClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317740960681891246, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
+      propertyPath: onItemClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EquipWand
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317740960681891246, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
+      propertyPath: onItemClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WandLogic, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317740960681891246, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
+      propertyPath: onItemClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4049155086742545689, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
       propertyPath: m_Name
       value: HudManager
