@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="thicket tiles" tilewidth="10" tileheight="14" tilecount="50" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="thicket tiles" tilewidth="10" tileheight="14" tilecount="64" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="36">
   <image width="10" height="14" source="NO.png"/>
@@ -84,14 +84,6 @@
  <tile id="26">
   <image width="10" height="14" source="ice1.png"/>
  </tile>
- <tile id="21">
-  <image width="10" height="14" source="ice corner NE.png"/>
-  <objectgroup draworder="index" id="2">
-   <object id="1" x="-0.0835738" y="-0.13929">
-    <polygon points="0,0 10.2796,10.1681 10.1681,-0.13929"/>
-   </object>
-  </objectgroup>
- </tile>
  <tile id="22">
   <image width="10" height="14" source="ice corner NW.png"/>
   <objectgroup draworder="index" id="2">
@@ -100,11 +92,11 @@
    </object>
   </objectgroup>
  </tile>
- <tile id="23">
-  <image width="10" height="14" source="ice corner SE.png"/>
+ <tile id="21">
+  <image width="10" height="14" source="ice corner NE.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="10.1124" y="-0.0278579">
-    <polygon points="0,0 -10.2796,10.3074 -10.2517,14.2633 0.0278579,14.2911"/>
+   <object id="1" x="-0.0835738" y="-0.13929">
+    <polygon points="0,0 10.2796,10.1681 10.1681,-0.13929"/>
    </object>
   </objectgroup>
  </tile>
@@ -113,6 +105,14 @@
   <objectgroup draworder="index" id="2">
    <object id="1" x="-0.167148" y="-0.0835738">
     <polygon points="0,0 10.3074,10.2239 10.3353,14.1518 0.0278579,14.1797"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="23">
+  <image width="10" height="14" source="ice corner SE.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="10.1124" y="-0.0278579">
+    <polygon points="0,0 -10.2796,10.3074 -10.2517,14.2633 0.0278579,14.2911"/>
    </object>
   </objectgroup>
  </tile>
@@ -146,10 +146,10 @@
  <tile id="40">
   <image width="10" height="14" source="stone stairs.png"/>
  </tile>
- <tile id="41">
-  <image width="10" height="14" source="iron fence L.png"/>
+ <tile id="43">
+  <image width="10" height="14" source="iron fence D.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="-0.304348" y="-0.521739" width="3.52174" height="10.6522"/>
+   <object id="1" x="-0.26087" y="8.73913" width="10.4348" height="1.43478"/>
   </objectgroup>
  </tile>
  <tile id="42">
@@ -158,20 +158,26 @@
    <object id="1" x="6.78261" y="-0.434783" width="3.43478" height="10.5217"/>
   </objectgroup>
  </tile>
- <tile id="43">
-  <image width="10" height="14" source="iron fence D.png"/>
+ <tile id="41">
+  <image width="10" height="14" source="iron fence L.png"/>
   <objectgroup draworder="index" id="2">
-   <object id="1" x="-0.26087" y="8.73913" width="10.4348" height="1.43478"/>
+   <object id="1" x="-0.304348" y="-0.521739" width="3.52174" height="10.6522"/>
   </objectgroup>
  </tile>
  <tile id="44">
   <image width="10" height="14" source="stone trim.png"/>
  </tile>
- <tile id="45">
-  <image width="10" height="14" source="stone blep L.png"/>
+ <tile id="50">
+  <image width="10" height="14" source="stone trim end R.png"/>
+ </tile>
+ <tile id="49">
+  <image width="10" height="14" source="stone trim end L.png"/>
  </tile>
  <tile id="46">
   <image width="10" height="14" source="stone blep R.png"/>
+ </tile>
+ <tile id="45">
+  <image width="10" height="14" source="stone blep L.png"/>
  </tile>
  <tile id="47">
   <image width="10" height="14" source="stone bricks reverse.png"/>
@@ -179,11 +185,8 @@
  <tile id="48">
   <image width="10" height="14" source="stone dark part.png"/>
  </tile>
- <tile id="49">
-  <image width="10" height="14" source="stone trim end L.png"/>
- </tile>
- <tile id="50">
-  <image width="10" height="14" source="stone trim end R.png"/>
+ <tile id="59">
+  <image width="10" height="14" source="stone dark full.png"/>
  </tile>
  <tile id="51">
   <image width="10" height="14" source="stone bricks window L.png"/>
@@ -200,13 +203,75 @@
  <tile id="56">
   <image width="10" height="14" source="yellow carpet trim L.png"/>
  </tile>
- <tile id="57">
-  <image width="10" height="14" source="yellow carpet trim R.png"/>
- </tile>
  <tile id="58">
   <image width="10" height="14" source="yellow carpet trim U.png"/>
  </tile>
- <tile id="59">
-  <image width="10" height="14" source="stone dark full.png"/>
+ <tile id="57">
+  <image width="10" height="14" source="yellow carpet trim R.png"/>
+ </tile>
+ <tile id="60">
+  <image width="10" height="14" source="lava.png"/>
+ </tile>
+ <tile id="62">
+  <image width="10" height="14" source="lava corner NW.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="-0.565217" y="10.1739">
+    <polygon points="0.217391,-0.304348 4.47826,-6.26087 11.0435,-10.3478 0.217391,-10.3913"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="61">
+  <image width="10" height="14" source="lava corner NE.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="-0.347826" y="-0.304348">
+    <polygon points="0,0 10.7391,9.34783 10.5217,-0.0869565"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="64">
+  <image width="10" height="14" source="lava corner SW.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="-0.391304" y="-0.478261">
+    <polygon points="0,0 3.43478,7.21739 10.7391,12.7391 10.8696,14.8261 0.130435,14.8696"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="63">
+  <image width="10" height="14" source="lava corner SE.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="-0.478261" y="10.2609">
+    <polygon points="0,0 7.04348,-2.95652 10.8261,-10.4348 10.9565,3.91304 0.173913,4.04348"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="66">
+  <image width="10" height="14" source="magma.png"/>
+ </tile>
+ <tile id="68">
+  <image width="10" height="14" source="ash.png"/>
+ </tile>
+ <tile id="69">
+  <image width="10" height="14" source="ash border D.png"/>
+ </tile>
+ <tile id="70">
+  <image width="10" height="14" source="ash border L.png"/>
+ </tile>
+ <tile id="72">
+  <image width="10" height="14" source="ash border U.png"/>
+ </tile>
+ <tile id="71">
+  <image width="10" height="14" source="ash border R.png"/>
+ </tile>
+ <tile id="73">
+  <image width="10" height="14" source="skull.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="-0.26087" y="3.86957" width="9.56522" height="6.43478"/>
+  </objectgroup>
+ </tile>
+ <tile id="74">
+  <image width="10" height="14" source="green thing.png"/>
+ </tile>
+ <tile id="75">
+  <image width="10" height="14" source="brimstone.png"/>
  </tile>
 </tileset>

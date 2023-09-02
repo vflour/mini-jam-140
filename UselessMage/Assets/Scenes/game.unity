@@ -268,7 +268,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomPrefabs: []
   roomSize: 2
-  roomPath: Rooms/Thicket
   minSize: 50
   maxSize: 300
   OnRoomsGenerated:

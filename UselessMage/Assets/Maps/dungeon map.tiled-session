@@ -211,6 +211,94 @@
                 "y": 84.66666666666666
             }
         },
+        "Map Parts/Volcanic Plane/fire corner bottom left.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 80.05728607232368,
+                "y": 80.20050125313283
+            }
+        },
+        "Map Parts/Volcanic Plane/fire corner bottom right.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 80.05728607232368,
+                "y": 80.20050125313283
+            }
+        },
+        "Map Parts/Volcanic Plane/fire corner top left.tmx": {
+            "scale": 3,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 80.16666666666666,
+                "y": 79.33333333333333
+            }
+        },
+        "Map Parts/Volcanic Plane/fire corner top right.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 80.05728607232368,
+                "y": 80.20050125313283
+            }
+        },
+        "Map Parts/Volcanic Plane/fire dead end down.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 80.05728607232368,
+                "y": 80.20050125313283
+            }
+        },
+        "Map Parts/Volcanic Plane/fire dead end right.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 80.05728607232368,
+                "y": 80.20050125313283
+            }
+        },
+        "Map Parts/Volcanic Plane/fire dead end up.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 80.05728607232368,
+                "y": 80.20050125313283
+            }
+        },
+        "Map Parts/Volcanic Plane/fire hallway horizontal.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 79.77085571070535,
+                "y": 79.91407089151451
+            }
+        },
+        "Map Parts/Volcanic Plane/fire hallway vertical.tmx": {
+            "scale": 3.4912499999999995,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 79.77085571070535,
+                "y": 79.91407089151451
+            }
+        },
+        "Map Parts/Volcanic Plane/fire square1.tmx": {
+            "scale": 3,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 76.16666666666666,
+                "y": 74
+            }
+        },
+        "Map Parts/hub.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 395.3333333333333,
+                "y": 122.66666666666669
+            }
+        },
         "Tiles/portals.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 3
@@ -233,7 +321,7 @@
     },
     "last.externalTilesetPath": "C:/Users/IceBr/Pictures/mack things/art/gamejams/dungeon/UselessMage Tiled Project/Tiles",
     "last.imagePath": "C:/Users/IceBr/Pictures/mack things/art/gamejams/dungeon/UselessMage Tiled Project/Tiles",
-    "map.fixedSize": false,
+    "map.fixedSize": true,
     "map.height": 16,
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 10,
@@ -245,18 +333,18 @@
     ],
     "project": "dungeon map.tiled-project",
     "recentFiles": [
-        "Tiles/thicket tiles.tsx",
-        "Map Parts/Ice Caves/hub.tmx",
-        "Tiles/portals.tsx",
-        "Map Parts/Ice Caves/dead end left.tmx",
-        "Map Parts/Ice Caves/dead end right.tmx",
-        "Map Parts/Ice Caves/ice hallway vertical.tmx",
-        "Map Parts/Ice Caves/ice hallway horizontal.tmx",
-        "Map Parts/Ice Caves/dead end down.tmx",
-        "Map Parts/Ice Caves/dead end up.tmx",
-        "Map Parts/Thicket/dead end down.tmx",
-        "Map Parts/Ice Caves/uwu.tmx",
-        "Map Parts/Ice Caves/square1 ice.tmx"
+        "Map Parts/Volcanic Plane/fire dead end down.tmx",
+        "Map Parts/Volcanic Plane/fire dead end right.tmx",
+        "Map Parts/Volcanic Plane/fire dead end up.tmx",
+        "Map Parts/Volcanic Plane/fire hallway horizontal.tmx",
+        "Map Parts/Volcanic Plane/fire hallway vertical.tmx",
+        "Map Parts/Volcanic Plane/fire corner bottom left.tmx",
+        "Map Parts/Volcanic Plane/fire corner bottom right.tmx",
+        "Map Parts/Volcanic Plane/fire corner top right.tmx",
+        "Map Parts/Volcanic Plane/fire corner top left.tmx",
+        "Map Parts/Volcanic Plane/fire square1.tmx",
+        "Map Parts/hub.tmx",
+        "Tiles/portals.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
