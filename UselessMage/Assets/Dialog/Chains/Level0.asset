@@ -15,19 +15,80 @@ MonoBehaviour:
   data:
   - leftActor:
       setName: 1
-      name: Frog
+      name: Flapjack
       setPortrait: 1
       portrait: {fileID: 21300000, guid: 7c1d705f0ea45ab41905c42abf7b5790, type: 3}
       isSpeaking: 1
     rightActor:
-      setName: 1
-      name: Rabbit
-      setPortrait: 1
-      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
       isSpeaking: 0
     lineVariants:
-    - lineString: I got you!
-      lineClip: {fileID: 8300000, guid: 483be774e62b48f438519addaa6d6f89, type: 3}
+    - lineString: Eee!
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: It is I, the great mage of this kingdom!
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Chi
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: "Oh no, not the great mage of \u2026 this kingdom! Whatever shall
+        I do!"
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: "I shall \u2026"
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: Annoy you into oblivion!
+      lineClip: {fileID: 0}
   - leftActor:
       setName: 0
       name: 
@@ -41,20 +102,313 @@ MonoBehaviour:
       portrait: {fileID: 0}
       isSpeaking: 1
     lineVariants:
-    - lineString: No you didn't!
-      lineClip: {fileID: 8300000, guid: 460a9da54124e2e43b6cfce58b509032, type: 3}
+    - lineString: "You\u2019re gonna \u2026 what?"
+      lineClip: {fileID: 0}
   - leftActor:
-      setName: 1
+      setName: 0
       name: 
-      setPortrait: 1
+      setPortrait: 0
       portrait: {fileID: 0}
       isSpeaking: 0
     rightActor:
       setName: 1
-      name: Mentor
+      name: Walleye
       setPortrait: 1
       portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
       isSpeaking: 1
     lineVariants:
-    - lineString: What's all this then?
-      lineClip: {fileID: 8300000, guid: 6967b19440dab2b49a6c903cd3baff58, type: 3}
+    - lineString: "Now, now, what\u2019s all this about annoying folks into oblivion?"
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: Mentor! It is I, the great mage of yore!
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: I can see that, yes, yes.
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: "Well \u2026 if you truly want to annoy, you can take this magic
+        staff."
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: "\u2026"
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: This staff sucks. Got any better ones?
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Chi
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: "I want a staff \u2026"
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Walleye
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: "Well, if you want a better staff, you\u2019re going to have to
+        collect more tokens of love."
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Chi
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: "Why don\u2019t I get a staff?"
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: Tokens of love?
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Walleye
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: "Yes, don\u2019t you know, young one? The more you annoy folks,
+        the more love you collect."
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Chi
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: I want a staff!
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Walleye
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: "With enough love \u2026 you can \u2026 rule the kingdom!"
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Chi
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: Gimme a staff!
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Walleye
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: So go forth, and annoy your friends!
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: Why should I annoy my friends?
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: They stole my favorite hat.
+      lineClip: {fileID: 0}
+    - lineString: They ate my candy bar.
+      lineClip: {fileID: 0}
+    - lineString: They stole my bicycle.
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: Yes. Everything makes sense now.
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    rightActor:
+      setName: 1
+      name: Chi
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      isSpeaking: 1
+    lineVariants:
+    - lineString: It does?
+      lineClip: {fileID: 0}
+  - leftActor:
+      setName: 0
+      name: 
+      setPortrait: 0
+      portrait: {fileID: 0}
+      isSpeaking: 1
+    rightActor:
+      setName: 1
+      name: 
+      setPortrait: 1
+      portrait: {fileID: 0}
+      isSpeaking: 0
+    lineVariants:
+    - lineString: I, the great mage of this kingdom, will annoy my friends into oblivion
+        to save the kingdom!
+      lineClip: {fileID: 0}
