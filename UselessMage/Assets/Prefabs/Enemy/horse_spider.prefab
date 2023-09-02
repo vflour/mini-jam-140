@@ -100,9 +100,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Annoyance: 0
+  Stun: 0
+  KnockBack: 0
   maxAnnoyance: 100
   target: {fileID: 0}
   moveSpeed: 0.25
+  attackDamage: 1
+  damageRange: 0.15
 --- !u!58 &-7073897779686955271
 CircleCollider2D:
   m_ObjectHideFlags: 0

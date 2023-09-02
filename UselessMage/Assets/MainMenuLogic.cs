@@ -11,7 +11,7 @@ public class MainMenuLogic : MonoBehaviour
         Credits.SetActive(!Credits.activeSelf);
     }
 
-    public void playGame(){
-        SceneManager.LoadScene ("game");
+    public void switchScene(string Scene){
+        SceneManager.LoadScene (Scene);
     }
 }

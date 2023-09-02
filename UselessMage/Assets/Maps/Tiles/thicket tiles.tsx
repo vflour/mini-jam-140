@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="thicket tiles" tilewidth="10" tileheight="14" tilecount="29" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="thicket tiles" tilewidth="10" tileheight="14" tilecount="50" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="36">
   <image width="10" height="14" source="NO.png"/>
@@ -136,5 +136,77 @@
   <objectgroup draworder="index" id="2">
    <object id="1" x="0.835738" y="6.1566" width="8.32952" height="4.0394"/>
   </objectgroup>
+ </tile>
+ <tile id="37">
+  <image width="10" height="14" source="stone.png"/>
+ </tile>
+ <tile id="39">
+  <image width="10" height="14" source="stone bricks.png"/>
+ </tile>
+ <tile id="40">
+  <image width="10" height="14" source="stone stairs.png"/>
+ </tile>
+ <tile id="41">
+  <image width="10" height="14" source="iron fence L.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="-0.304348" y="-0.521739" width="3.52174" height="10.6522"/>
+  </objectgroup>
+ </tile>
+ <tile id="42">
+  <image width="10" height="14" source="iron fence R.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="6.78261" y="-0.434783" width="3.43478" height="10.5217"/>
+  </objectgroup>
+ </tile>
+ <tile id="43">
+  <image width="10" height="14" source="iron fence D.png"/>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="-0.26087" y="8.73913" width="10.4348" height="1.43478"/>
+  </objectgroup>
+ </tile>
+ <tile id="44">
+  <image width="10" height="14" source="stone trim.png"/>
+ </tile>
+ <tile id="45">
+  <image width="10" height="14" source="stone blep L.png"/>
+ </tile>
+ <tile id="46">
+  <image width="10" height="14" source="stone blep R.png"/>
+ </tile>
+ <tile id="47">
+  <image width="10" height="14" source="stone bricks reverse.png"/>
+ </tile>
+ <tile id="48">
+  <image width="10" height="14" source="stone dark part.png"/>
+ </tile>
+ <tile id="49">
+  <image width="10" height="14" source="stone trim end L.png"/>
+ </tile>
+ <tile id="50">
+  <image width="10" height="14" source="stone trim end R.png"/>
+ </tile>
+ <tile id="51">
+  <image width="10" height="14" source="stone bricks window L.png"/>
+ </tile>
+ <tile id="52">
+  <image width="10" height="14" source="stone bricks window R.png"/>
+ </tile>
+ <tile id="54">
+  <image width="10" height="14" source="purple carpet.png"/>
+ </tile>
+ <tile id="55">
+  <image width="10" height="14" source="yellow carpet trim D.png"/>
+ </tile>
+ <tile id="56">
+  <image width="10" height="14" source="yellow carpet trim L.png"/>
+ </tile>
+ <tile id="57">
+  <image width="10" height="14" source="yellow carpet trim R.png"/>
+ </tile>
+ <tile id="58">
+  <image width="10" height="14" source="yellow carpet trim U.png"/>
+ </tile>
+ <tile id="59">
+  <image width="10" height="14" source="stone dark full.png"/>
  </tile>
 </tileset>
