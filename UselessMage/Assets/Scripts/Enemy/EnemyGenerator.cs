@@ -8,6 +8,11 @@ public class EnemyGenerator : MonoBehaviour
     public GameObject[] enemyPrefabs;
     public GameObject target;
 
+    public void GetEnemyAssets()
+    {
+        enemyPrefabs = Resources.LoadAll<GameObject>("Monsters/" + GameData.Instance.CurrentLevel);
+    }
+
     public void GenerateEnemy(GameObject enemyPrefab, RoomEnemyData roomData)
     {
         var position = roomData.GetRandomPosition();
@@ -30,6 +35,11 @@ public class EnemyGenerator : MonoBehaviour
             GenerateEnemy(randomEnemy, roomData);
         }
 
+    }
+
+    void Awake()
+    {
+        GetEnemyAssets();
     }
 
     public void GenerateEnemies()
