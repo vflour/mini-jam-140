@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Enemy : MonoBehaviour
 {
-    public int Annoyance = 0;
     public float Stun = 0;
     public float KnockBack = 0;
 
-    public int maxAnnoyance = 100;
     public GameObject target;
     public float moveSpeed;
     private Rigidbody2D rb;
@@ -18,7 +17,9 @@ public class Enemy : MonoBehaviour
 
     void Start(){
         rb = this.GetComponent<Rigidbody2D>();
+        enemyAnimator = GetComponent<Animator>();
     }
+
     void FixedUpdate(){
         Vector3 targetDir = target.transform.position - transform.position;
         rb.velocity = targetDir * moveSpeed;
@@ -43,4 +44,59 @@ public class Enemy : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    
+    [field: SerializeField]
+    private AnnoyanceState _annoyanceState;
+    public AnnoyanceState EnemyAnnoyanceState 
+    {
+        private set
+        {
+            _annoyanceState = value;
+            enemyAnimator.Play(_annoyanceState.ToString(), -1, 0);
+        }
+        get
+        {
+            return _annoyanceState;
+        }
+
+    }
+    
+    private int _annoyance;
+    public int Annoyance 
+    {
+        set 
+        {
+            bool hit = _annoyance > value;
+            _annoyance = Mathf.Clamp(value, 0, maxAnnoyance);
+            
+            if (!hit) return;
+            
+            bool firstHit = EnemyAnnoyanceState == AnnoyanceState.Idle; 
+            if (firstHit)
+                EnemyAnnoyanceState = AnnoyanceState.Surprised;
+            else if (_annoyance == 0)
+                EnemyAnnoyanceState = AnnoyanceState.Enraged;
+            else if (0.5f <= _annoyance/maxAnnoyance )
+                EnemyAnnoyanceState = AnnoyanceState.Annoyed;
+                
+        }
+        get 
+        {
+            return _annoyance;
+        }
+    }
+
+    public int maxAnnoyance = 100; 
+    
+    [Header("Enemy Assets")]
+    public Animator enemyAnimator;
+
+}
+
+public enum AnnoyanceState
+{
+    Idle,
+    Surprised,
+    Annoyed,
+    Enraged 
 }

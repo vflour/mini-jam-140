@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 693755397489476834}
   - component: {fileID: 7960490996816174399}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EnemySpawnBounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
