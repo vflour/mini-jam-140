@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
         if (EnemyAnnoyanceState != AnnoyanceState.Enraged)
         {
             if(Stun>0){
-                //rb.velocity = Vector2.zero;
+                rb.velocity = Vector2.zero;
                 Stun--;
             }
 
