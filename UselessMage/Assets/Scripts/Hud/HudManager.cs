@@ -81,7 +81,6 @@ public class HudManager : MonoBehaviour
     {
         Debug.Log($"OnItemButtonClick:{id}");
         SetSelectedItem(id);
-        onItemClick.Invoke(id);
     }
 
     private void OnPortraitClick()
@@ -104,6 +103,7 @@ public class HudManager : MonoBehaviour
     public void SetSelectedItem(int id)
     {
         hudUI.SetSelectedItem(id);
+        onItemClick.Invoke(id);
     }
 
     public int GetSelectedItem()
