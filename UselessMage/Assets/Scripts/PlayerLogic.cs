@@ -37,7 +37,7 @@ public class PlayerLogic : MonoBehaviour
                 coll.enabled = false;
                 _deathLungeDirection = Vector3.up*2.5f + new Vector3(Random.Range(-2.0f, 2.0f), 0);
                 _deathLungeTime = deathTime;
-                animator.Play("Death", -1 ,0);
+                animator.Play("Death", 0, 0);
             }
         }
     }
@@ -61,11 +61,19 @@ public class PlayerLogic : MonoBehaviour
     void Update()
     {
         movementDirection = new Vector2(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"));
+
+            
     }
 
     void FixedUpdate() {
+
         if (!IsDefeated)
+        {
+            animator.SetBool("Walking", movementDirection.magnitude > 0.2f);
+            animator.SetFloat("Horizontal", movementDirection.x);
+            animator.SetFloat("Vertical", movementDirection.y);
             rb.velocity = movementDirection * movementSpeed;
+        }   
         else
         {
             if (_deathLungeTime >= deathTime - peakTime)

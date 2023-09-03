@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4e543bfd995e55b40a14c113b83c02b5
+guid: d00577cf8061be5089b3472fd4749957
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: flapjack_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192590150dd28631db4bd78a3ecabbed
+      internalID: -406861721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flapjack_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 2
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70fd35c5a3496799a1d0f2d023af21d
+      internalID: 61222699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flapjack_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 2
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f0bbbfbcf021629bbef327d7075aed
+      internalID: 14241497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flapjack_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 2
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444364df0701c9b49985376c2bef0a33
+      internalID: 1044707835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flapjack_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698088ff7889c345985b7d80fcf86bc3
+      internalID: -349750509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flapjack_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cf5c38824bd833da037468d5f170e0
+      internalID: -1839640769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flapjack_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 2
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac7d82a320bffcf9853283439739457
+      internalID: -1665012597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flapjack_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 2
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d58ecbe8c979db88eddefe9c99423d
+      internalID: 1161780599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +287,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flapjack_sheet_0: -406861721
+      flapjack_sheet_1: 61222699
+      flapjack_sheet_2: 14241497
+      flapjack_sheet_3: 1044707835
+      flapjack_sheet_4: -349750509
+      flapjack_sheet_5: -1839640769
+      flapjack_sheet_6: -1665012597
+      flapjack_sheet_7: 1161780599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
