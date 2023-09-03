@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
 
     public GameObject target;
     public float moveSpeed;
-    private Rigidbody2D rb;
+    protected Rigidbody2D rb;
     private Collider2D collider;
     public GameObject loveDrop;
     public ElementType elementType;
@@ -131,7 +131,7 @@ public class Enemy : MonoBehaviour
     {
         set 
         {
-            bool hit = _annoyance <= value;
+            bool hit = _annoyance < value;
             _annoyance = Mathf.Clamp(value, 0, maxAnnoyance);
             if (!hit) return;
              

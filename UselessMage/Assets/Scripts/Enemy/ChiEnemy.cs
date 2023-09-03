@@ -10,6 +10,7 @@ public class ChiEnemy :Enemy
     
     public float elementSwitchCooldownTime = 5f;
     private float _elementSwitchCooldown;
+
     protected override void Start()
     {
         base.Start();
@@ -48,6 +49,14 @@ public class ChiEnemy :Enemy
         }
     }
     
+    protected override void FollowTarget()
+    {
+        base.FollowTarget();
+        var direction = Vector3.Normalize(rb.velocity);
+        enemyAnimator.SetFloat("Horizontal", direction.x);
+        enemyAnimator.SetFloat("Vertical", direction.y);
+    }
+
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
