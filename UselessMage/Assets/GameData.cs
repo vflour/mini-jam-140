@@ -9,6 +9,7 @@ public class GameData : MonoBehaviour
     public static GameData Instance;
 
     public string CurrentLevel;
+    public int currency = 0;
     public bool[] collectedWands = new bool[] {true,false,false,false};
 
     private void Awake()

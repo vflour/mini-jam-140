@@ -12,9 +12,16 @@ public class Enemy : MonoBehaviour
     public float moveSpeed;
     private Rigidbody2D rb;
     private Collider2D collider;
+    public GameObject loveDrop;
 
     public int attackDamage;
     public float damageRange;
+
+    private void DropLove()
+    {
+        var drop = Instantiate(loveDrop, transform.parent);
+        drop.transform.position = transform.position;
+    }
 
     void Start(){
         rb = this.GetComponent<Rigidbody2D>();
@@ -71,10 +78,18 @@ public class Enemy : MonoBehaviour
     {
         private set
         {
+            
+            enemyAnimator.Play(value.ToString(), 0, 0);
+            if (_annoyanceState == value) return;
             _annoyanceState = value;
-            enemyAnimator.Play(_annoyanceState.ToString(), 0, 0);
+            
+
             if (_annoyanceState == AnnoyanceState.Enraged)
-                collider.enabled = false;
+            {
+                collider.enabled = false; 
+                DropLove();
+            }
+
         }
         get
         {

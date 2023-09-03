@@ -42,6 +42,7 @@ public class PlayerLogic : MonoBehaviour
         }
     }
     public TMP_Text healthtext;
+    public TMP_Text lovetext;
 
     public float deathTime = 1f;
     public float peakTime = 0.15f;
@@ -90,5 +91,6 @@ public class PlayerLogic : MonoBehaviour
 
         float percentage = (float)health/(float)maxhealth*100;
         healthtext.SetText(percentage + "%");
+        lovetext.SetText(GameData.Instance.currency.ToString());
     }
 }

@@ -7,6 +7,7 @@ public class EnemyGenerator : MonoBehaviour
     public LevelGenerator levelGenerator;
     public GameObject[] enemyPrefabs;
     public GameObject target;
+    public GameObject loveDrop;
 
     public void GetEnemyAssets()
     {
@@ -18,8 +19,9 @@ public class EnemyGenerator : MonoBehaviour
         var position = roomData.GetRandomPosition();
         var enemy = Instantiate(enemyPrefab, roomData.transform);
         enemy.transform.localPosition = position;
-        enemy.GetComponent<Enemy>().target = target;
-
+        var enemyData = enemy.GetComponent<Enemy>();
+        enemyData.target = target;
+        enemyData.loveDrop = loveDrop;
         roomData.enemyCount++;
     }
 
