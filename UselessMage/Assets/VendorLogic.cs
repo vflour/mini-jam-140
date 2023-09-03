@@ -8,8 +8,9 @@ public class VendorLogic : MonoBehaviour
     public int WandPrice;
     public DialogManager dramaManager;
     public DialogChain dramaChain;
-    public HudManager hudManager;
+
     public AudioSource buySFX;
+    public WandEquipper wandEquipper;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,7 +20,7 @@ public class VendorLogic : MonoBehaviour
             GameData.Instance.collectedWands[WandNumber-1] == true &&
             GameData.Instance.currency >= WandPrice){
                 GameData.Instance.collectedWands[WandNumber] = true;
-                hudManager.EnableItem(WandNumber);
+                wandEquipper.enabled = false;
                 Debug.Log("Bought wand " + WandNumber);
                 GameData.Instance.currency -= WandPrice;
                 dramaManager.SetVariant(GameData.Instance.currentVariant);

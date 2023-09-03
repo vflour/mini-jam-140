@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37312585, g: 0.38074517, b: 0.35872814, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -258,7 +258,7 @@ MonoBehaviour:
   WandPrice: 50
   dramaManager: {fileID: 1760640374}
   dramaChain: {fileID: 11400000, guid: 58ff5bd133ff1444b9238fb3cbf3dd87, type: 2}
-  hudManager: {fileID: 575490540}
+  wandEquipper: {fileID: 816784346}
 --- !u!61 &157704427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -638,17 +638,6 @@ Transform:
   - {fileID: 894094755}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &575490540 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2317740960681891246, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
-  m_PrefabInstance: {fileID: 636737220}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d432014b907298b49be1ad3d9910252f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &636737220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -789,6 +778,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &816784346 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6268216304838115951, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
+  m_PrefabInstance: {fileID: 636737220}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be841e0f25bc2bf91c5cb412e7dc7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &875882807
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +999,7 @@ MonoBehaviour:
   WandPrice: 100
   dramaManager: {fileID: 1760640374}
   dramaChain: {fileID: 11400000, guid: 9ca876333ebc0fc47af71baad5f334f3, type: 2}
-  hudManager: {fileID: 575490540}
+  wandEquipper: {fileID: 816784346}
 --- !u!61 &967228274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1665,7 +1665,7 @@ MonoBehaviour:
   WandPrice: 250
   dramaManager: {fileID: 1760640374}
   dramaChain: {fileID: 11400000, guid: d0c85ee3008a11f46b02a2914a7076cd, type: 2}
-  hudManager: {fileID: 575490540}
+  wandEquipper: {fileID: 816784346}
 --- !u!61 &1303570780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2917,6 +2917,10 @@ PrefabInstance:
       propertyPath: CurrentLevel
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1519233091267444311, guid: ace2c349c53db1b438130221a8c6dc07, type: 3}
+      propertyPath: wandEquipper
+      value: 
+      objectReference: {fileID: 816784346}
     - target: {fileID: 4510648335371734192, guid: ace2c349c53db1b438130221a8c6dc07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5278773

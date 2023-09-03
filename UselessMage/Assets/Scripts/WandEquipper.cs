@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class WandEquipper : MonoBehaviour
 {
-    private bool _enabled = false;
+    public bool enabled = false;
     void Update()
     {
-        if (!_enabled)
+        if (!enabled)
         {
-            _enabled = true;
+            enabled = true;
             HudManager manager = GetComponent<HudManager>();
             var wands = GameData.Instance.collectedWands;
             for (int i = 0; i < wands.Length; i++)
             if (wands[i])
                 manager.EnableItem(i);
-        
+            else
+                manager.DisableItem(i);
     
         }
     }
