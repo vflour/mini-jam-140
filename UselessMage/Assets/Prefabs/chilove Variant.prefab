@@ -86,3 +86,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a2b79b86c56dce089b7b04e8c25065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSFX: {fileID: 3073986392011663380}
+--- !u!82 &3073986392011663380 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1710521405425156625, guid: 7f571a95fa7301d88818d00da7e5c381, type: 3}
+  m_PrefabInstance: {fileID: 4401143225258928645}
+  m_PrefabAsset: {fileID: 0}
