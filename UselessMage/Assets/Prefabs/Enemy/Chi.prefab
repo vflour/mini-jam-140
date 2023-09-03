@@ -306,14 +306,14 @@ MonoBehaviour:
   Stun: 0
   KnockBack: 0
   target: {fileID: 0}
-  moveSpeed: 0
+  moveSpeed: 0.3
   loveDrop: {fileID: 3153126387048065687, guid: 7f571a95fa7301d88818d00da7e5c381, type: 3}
   elementType: 3
   roomData: {fileID: 0}
   attackDamage: 0
   damageRange: 0
   _annoyanceState: 0
-  maxAnnoyance: 100
+  maxAnnoyance: 500
   enemyAnimator: {fileID: 0}
   aoeRadiusObjects:
   - {fileID: 3759368894166967462, guid: 0233df7e90c5671a495a1fb8d4203521, type: 3}

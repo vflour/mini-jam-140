@@ -405,6 +405,10 @@ PrefabInstance:
       propertyPath: loveDrop
       value: 
       objectReference: {fileID: 3153126387048065687, guid: 7f571a95fa7301d88818d00da7e5c381, type: 3}
+    - target: {fileID: 8901480203930498678, guid: b3e5502f2caa40242b089e66f4395929, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1744356356}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
