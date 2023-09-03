@@ -12,6 +12,7 @@ public class DramaHandler : MonoBehaviour
     {
         if(!GameData.Instance.watchedIntro){
             GameData.Instance.watchedIntro = true;
+            dramaManager.IncrementVariant();
             dramaManager.Load(introChain);
         }
 
