@@ -33,32 +33,46 @@ public class Enemy : MonoBehaviour
         collider = GetComponent<Collider2D>();
     }
 
-    void FixedUpdate(){
-        var camera = Camera.main;
+    protected virtual void FollowTarget()
+    {
         Vector3 targetDir = EnemyAnnoyanceState != AnnoyanceState.Enraged ? target.transform.position - transform.position : OffscreenTarget - transform.position;
         rb.velocity = targetDir * moveSpeed;
+    }
+
+    protected virtual void DamageTarget()
+    {
+        var nearTarget = Vector2.Distance(this.transform.position, target.transform.position);
+        if (nearTarget < damageRange){
+            target.GetComponent<PlayerLogic>().health -= attackDamage;
+        }
+    }
+
+    protected virtual void HandleStun()
+    {
+        if(Stun>0){
+            rb.velocity = Vector2.zero;
+            Stun--;
+        }
+        else {
+            enemyAnimator.SetBool("Stunned", false);
+        }
+    }
+
+    protected virtual void FixedUpdate(){
+        FollowTarget();
+        var camera = Camera.main;
         var opposite = -rb.velocity;
         var screenPoint = camera.WorldToScreenPoint(transform.position);
        
         if (EnemyAnnoyanceState != AnnoyanceState.Enraged)
         {
-            if(Stun>0){
-                rb.velocity = Vector2.zero;
-                Stun--;
-            }
-            else {
-                enemyAnimator.SetBool("Stunned", false);
-            }
-
+            HandleStun(); 
             if(KnockBack>0){
                 //rb.AddRelativeForce(Vector3.Normalize(opposite) * KnockBack * 0.1f, ForceMode2D.Impulse);
                 KnockBack = KnockBack/2;
             }
-        
-            var nearTarget = Vector2.Distance(this.transform.position,target.transform.position);
-            if (nearTarget < damageRange){
-                target.GetComponent<PlayerLogic>().health -= attackDamage;
-            }
+            
+            DamageTarget();
         }
         else if(screenPoint.x <= -50f || screenPoint.x >= camera.pixelWidth + 50f) {
             Destroy(this.gameObject);
@@ -95,8 +109,9 @@ public class Enemy : MonoBehaviour
 
             if (_annoyanceState == AnnoyanceState.Enraged)
             {
-                collider.enabled = false; 
-                roomData.enemyCount -= 1; 
+                collider.enabled = false;
+                if (roomData != null)
+                    roomData.enemyCount -= 1; 
                 DropLove();
             }
 
