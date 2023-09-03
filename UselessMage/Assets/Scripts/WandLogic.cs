@@ -13,6 +13,7 @@ public class WandLogic : MonoBehaviour
 
     public void EquipWand(int wand)
     {
+        Debug.Log("Trying to equip " + wand);
         // incase dequipped
         if (wand > wandTypeGFX.Length && wand < -1)
             return;
@@ -30,7 +31,7 @@ public class WandLogic : MonoBehaviour
     }
 
     void Update()
-    {           
+    {   
         var camera = Camera.main;
         if (wandGFX == null) return;
         
@@ -45,6 +46,7 @@ public class WandLogic : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
+            Debug.Log("Firing");
             // get direction of mouse
             var direction = camera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             direction.Normalize();

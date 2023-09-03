@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
             }
 
             if(KnockBack>0){
-                rb.AddRelativeForce(Vector3.Normalize(opposite) * KnockBack * 0.1f, ForceMode2D.Impulse);
+                //rb.AddRelativeForce(Vector3.Normalize(opposite) * KnockBack * 0.1f, ForceMode2D.Impulse);
                 KnockBack = KnockBack/2;
             }
         
