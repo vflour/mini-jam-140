@@ -12,6 +12,7 @@ public class GameData : MonoBehaviour
     public bool watchedIntro = false;
     public bool watchRespawnScene = false;
     public bool watchGameWinScene = false;
+    public WandEquipper wandEquipper;
 
     public int currentVariant = 0;
     public int currency = 0;
@@ -33,6 +34,8 @@ public class GameData : MonoBehaviour
         currency = 0;
         watchedIntro = false;
         currentVariant++;
+        if (wandEquipper)
+            wandEquipper.enabled = false;
         if(currentVariant>2){
             currentVariant = 0;
         }
