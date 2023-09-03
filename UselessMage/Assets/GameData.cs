@@ -26,4 +26,13 @@ public class GameData : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void NewGamePlus(){
+        collectedWands = new bool[] {true,false,false,false};
+        currency = 0;
+        watchedIntro = false;
+        currentVariant++;
+        if(currentVariant>2){
+            currentVariant = 0;
+        }
+    }
 }

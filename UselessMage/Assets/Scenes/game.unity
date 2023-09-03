@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 457515333}
   - component: {fileID: 457515332}
   m_Layer: 0
-  m_Name: portal blue
+  m_Name: HubPortal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,7 +241,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: ae7dbe0d508309c49ab930000e2687ca, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cfe1db9c09446f46b2fc979c63fa8ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

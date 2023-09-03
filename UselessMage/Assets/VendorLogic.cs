@@ -14,6 +14,7 @@ public class VendorLogic : MonoBehaviour
        
         if(other.tag == "Player"){
             if(GameData.Instance.collectedWands[WandNumber] == false &&
+            GameData.Instance.collectedWands[WandNumber-1] == true &&
             GameData.Instance.currency >= WandPrice){
                 GameData.Instance.collectedWands[WandNumber] = true;
                 Debug.Log("Bought wand " + WandNumber);
