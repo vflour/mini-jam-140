@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     private Collider2D collider;
     public GameObject loveDrop;
     public ElementType elementType;
+    public RoomEnemyData roomData;
 
     public int attackDamage;
     public float damageRange;
@@ -33,9 +34,11 @@ public class Enemy : MonoBehaviour
     }
 
     void FixedUpdate(){
+        var camera = Camera.main;
         Vector3 targetDir = EnemyAnnoyanceState != AnnoyanceState.Enraged ? target.transform.position - transform.position : OffscreenTarget - transform.position;
         rb.velocity = targetDir * moveSpeed;
         var opposite = -rb.velocity;
+        var screenPoint = camera.WorldToScreenPoint(transform.position);
        
         if (EnemyAnnoyanceState != AnnoyanceState.Enraged)
         {
@@ -57,7 +60,7 @@ public class Enemy : MonoBehaviour
                 target.GetComponent<PlayerLogic>().health -= attackDamage;
             }
         }
-        else if(targetDir.magnitude < 0.01) {
+        else if(screenPoint.x <= -50f || screenPoint.x >= camera.pixelWidth + 50f) {
             Destroy(this.gameObject);
         }
     }
@@ -69,9 +72,9 @@ public class Enemy : MonoBehaviour
         {
             if (_offscreenTarget == Vector3.zero)
             {
-                var camera = Camera.current;
+                var camera = Camera.main;
                 var position = camera.WorldToScreenPoint(transform.position);
-                var extremity = position.x >= camera.pixelWidth/2 ? camera.pixelWidth + 100 : -100;
+                var extremity = position.x >= camera.pixelWidth/2 ? camera.pixelWidth + 2000 : -2000;
                 _offscreenTarget = camera.ScreenToWorldPoint(new Vector3(extremity, position.y));
             }
             return _offscreenTarget;
@@ -93,6 +96,7 @@ public class Enemy : MonoBehaviour
             if (_annoyanceState == AnnoyanceState.Enraged)
             {
                 collider.enabled = false; 
+                roomData.enemyCount -= 1; 
                 DropLove();
             }
 
