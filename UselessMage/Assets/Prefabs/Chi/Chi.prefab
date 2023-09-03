@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 5763388661367077723}
   - component: {fileID: 8901480203930498678}
   - component: {fileID: 8790344528333510247}
+  - component: {fileID: 1105333994220370088}
   m_Layer: 6
   m_Name: Chi
   m_TagString: Enemy
@@ -320,6 +321,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0.021608498, y: 0.39820695}
   m_Size: {x: 1.0494663, y: 1.2408525}
   m_Direction: 0
+--- !u!114 &1105333994220370088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4679299292504915576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929014ac524fc2e6089140a13f5d775a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blastSFX: {fileID: 4501158866890784045, guid: bccfde853c4d41be798260a82ed4c532, type: 3}
+  blastFireRate: 5
 --- !u!1 &5172121177794553657
 GameObject:
   m_ObjectHideFlags: 0
