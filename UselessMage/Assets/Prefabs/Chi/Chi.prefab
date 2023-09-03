@@ -272,7 +272,7 @@ MonoBehaviour:
   KnockBack: 0
   target: {fileID: 0}
   moveSpeed: 0.3
-  loveDrop: {fileID: 3153126387048065687, guid: 7f571a95fa7301d88818d00da7e5c381, type: 3}
+  loveDrop: {fileID: 1645546487163502738, guid: b7973ea44597e6333a38d96c339166f7, type: 3}
   elementType: 3
   roomData: {fileID: 0}
   attackDamage: 10

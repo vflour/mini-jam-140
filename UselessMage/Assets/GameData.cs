@@ -11,6 +11,8 @@ public class GameData : MonoBehaviour
     public string CurrentLevel;
     public bool watchedIntro = false;
     public bool watchRespawnScene = false;
+    public bool watchGameWinScene = false;
+
     public int currentVariant = 0;
     public int currency = 0;
     public bool[] collectedWands = new bool[] {true,false,false,false};

@@ -97,7 +97,15 @@ public class Enemy : MonoBehaviour
             return _offscreenTarget;
         }
     }
-    
+   
+    protected virtual void HandleDefeat()
+    {
+        collider.enabled = false;
+        if (roomData != null)
+            roomData.enemyCount -= 1; 
+        DropLove();
+    }
+
     [field: SerializeField]
     private AnnoyanceState _annoyanceState;
     public AnnoyanceState EnemyAnnoyanceState 
@@ -112,10 +120,7 @@ public class Enemy : MonoBehaviour
 
             if (_annoyanceState == AnnoyanceState.Enraged)
             {
-                collider.enabled = false;
-                if (roomData != null)
-                    roomData.enemyCount -= 1; 
-                DropLove();
+                HandleDefeat();                
             }
 
         }

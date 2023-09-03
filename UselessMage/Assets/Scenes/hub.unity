@@ -773,6 +773,7 @@ MonoBehaviour:
   dramaManager: {fileID: 1760640374}
   introChain: {fileID: 11400000, guid: d8f6a9a25d64efb498e332fa6c77eb2f, type: 2}
   respawnChain: {fileID: 11400000, guid: 299d20e15e8106d4db72323c3d31df97, type: 2}
+  gameWinChain: {fileID: 11400000, guid: 683cc3dd1c1523c48bf7184df29b4a4f, type: 2}
 --- !u!4 &770963010
 Transform:
   m_ObjectHideFlags: 0

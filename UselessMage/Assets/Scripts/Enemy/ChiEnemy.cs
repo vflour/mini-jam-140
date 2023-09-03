@@ -48,7 +48,7 @@ public class ChiEnemy :Enemy
             aoeRadiusFX.transform.localScale = new Vector3(2, 2, 2);
         }
     }
-    
+
     protected override void FollowTarget()
     {
         base.FollowTarget();

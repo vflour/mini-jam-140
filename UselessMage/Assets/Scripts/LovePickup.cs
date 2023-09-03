@@ -22,7 +22,7 @@ public class LovePickup : MonoBehaviour
         }
     }
 
-    void FinishAnimation()
+    public virtual void FinishAnimation()
     {
         Destroy(gameObject);
     }

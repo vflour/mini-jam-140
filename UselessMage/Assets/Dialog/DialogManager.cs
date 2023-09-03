@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class DialogManager : MonoBehaviour
     private DialogChain currentDialogChain;
     private int currentIndex;
     private int currentVariant = -1;
+    
+    public UnityEvent onChainFinished;
 
     public void Start()
     {
@@ -69,6 +72,7 @@ public class DialogManager : MonoBehaviour
     public void Stop()
     {
         currentDialogChain = null;
+        onChainFinished.Invoke();
         dialogUI.Hide();
     }
 
