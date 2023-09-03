@@ -77,4 +77,9 @@ public class DialogManager : MonoBehaviour
         return currentDialogChain != null;
     }
 
+    public void SetVariant(int variant)
+    {
+        currentVariant = variant;
+    }
+
 }

@@ -26,8 +26,8 @@ MonoBehaviour:
       portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
       isSpeaking: 1
     lineVariants:
-    - lineString: "Ah, I see you\u2019re returned to us."
-      lineClip: {fileID: 0}
+    - lineString: "Ah, I see you\u2019ve returned to us."
+      lineClip: {fileID: 8300000, guid: 2e84357f27e6bb84b93abe3d88152d4b, type: 3}
   - leftActor:
       setName: 1
       name: Flapjack
@@ -42,7 +42,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: M-m-mentor?
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 9007f68e711f76540ae5f26d520a7118, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -57,7 +57,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Yes, what is it child?
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 4dae955fb72278d42abdb892b2385a12, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -72,7 +72,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "Can I \u2026"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 04b8628f507298e48a2142cb92ac7942, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -87,7 +87,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Can I have a better staff?
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: ec577a544301a5648b42a992cdcbbdd9, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -102,7 +102,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: No.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 0ea1557a2cdf3f349911bfca96f3a3a6, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -117,7 +117,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Well, not without love tokens.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: a6f7f22510f9a9f4eb59e3a77f4ba08e, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -132,7 +132,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: If you have love tokens, spend them here.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 6f4b9d3ad451c654c84ddf73793e25f6, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -147,8 +147,8 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: My resolve has doubled!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: d757c67396972c24b97fe81d3a50618a, type: 3}
     - lineString: My resolve has tripled!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: dc017a0b288ac474e97dcac045ff37c3, type: 3}
     - lineString: My resolve has quadrupled!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 7bdd2b3d320109748b6c26a88bcbcbbb, type: 3}

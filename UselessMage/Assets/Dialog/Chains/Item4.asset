@@ -28,7 +28,7 @@ MonoBehaviour:
     lineVariants:
     - lineString: Ah, my greatest friend. I, the great mage of this kingdom, shall
         annoy you!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 0c9aa15fc5495654485b3a52231d284f, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -43,7 +43,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: "Wait, you\u2019re the one doing all this?"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: ec9894ebb16b22b4ebce452e667edbf3, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -58,11 +58,11 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "Yes, return the old man\u2019s hat at once!"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 42e054bab29a5fa488a2f83ccb514a90, type: 3}
     - lineString: "Yes, give me the old man\u2019s candy, so I can eat it!"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: bcf6df7a83d3d21498f7cca84337f3cb, type: 3}
     - lineString: Yes, the old man wants his terrible bike back!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 2eb6b54c75556584faacd9acf8ab000d, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -77,7 +77,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: "I don\u2019t have that \u2026 What are you on about?"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 8544eff56fbedad46b5e5c3e451de374, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -91,8 +91,8 @@ MonoBehaviour:
       portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
       isSpeaking: 1
     lineVariants:
-    - lineString: Yes, give my things back!
-      lineClip: {fileID: 0}
+    - lineString: Yes, give me my things back!
+      lineClip: {fileID: 8300000, guid: c9fa2017745bb944f9c35749b321231e, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -107,7 +107,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: "I don\u2019t have anything!"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 9d02eb9dd44c8e24c8da38a6404b074e, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -122,7 +122,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Here, take this, child. My last staff.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 3d4e3c5b41f53504c8f5b331ce15bed0, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -137,7 +137,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Why are you doing any of this?
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 8b5d8d654b45e784ab00f23e96d49ff7, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -152,7 +152,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Thank you Mentor! I shall annoy in your honor!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 15ee04698008c94458a6868201b00702, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -167,7 +167,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "I shall \u2026"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 648d30ba4f4a630468db55f69a362c84, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -182,4 +182,4 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Annoy my best friend into oblivion!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 477c05d00697e904bbfb495adea69d2f, type: 3}

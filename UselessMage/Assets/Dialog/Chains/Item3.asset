@@ -27,7 +27,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Ha ha, this is fun!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: b02887f42a39245438d5482bd880f128, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -43,7 +43,7 @@ MonoBehaviour:
     lineVariants:
     - lineString: "I\u2019m glad you\u2019re having fun, but you better take all
         this super seriously."
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 672624cff1af4a24a954ee7e540bad5f, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -58,7 +58,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Of course I am. I am super seriously having fun.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: d88791122c34a5e48b3b1f83f82d156c, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -73,7 +73,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Now child, remember.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: b442e55f166509542be6d5d6713bbe82, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -88,11 +88,11 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: "If your hat isn\u2019t green, it isn\u2019t a hat at all."
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 3bad94749787edb45a17f2f958f10b7f, type: 3}
     - lineString: Candy staves are made from love.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 2d25d91283f9d5642993f9ce6db3a210, type: 3}
     - lineString: Bicycles have four wheels.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 62b5069be7d44a94a971413d9e711454, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -108,7 +108,7 @@ MonoBehaviour:
     lineVariants:
     - lineString: "Yes! My resolve has doubled! It\u2019s important that I say aloud
         how I feel!"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 7ebe18a9296437443a0aded6a0115833, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -123,7 +123,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Are you mocking me?
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: cf9a1ba96d515224a9576218f2c48d2f, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -138,7 +138,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: What?
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 60f8be8a6f046dc44889514cda96ae9f, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -153,7 +153,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Here, take a new staff. I forgot I had this one.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 08333f1c30344db439f8b5956fe75c87, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -168,4 +168,4 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Excellent! I shall annoy my friends!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 81b9db1693df2194e995fd744d144de2, type: 3}

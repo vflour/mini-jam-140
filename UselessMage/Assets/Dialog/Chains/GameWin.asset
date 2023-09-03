@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - leftActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
+      setName: 1
+      name: Flapjack
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 7c1d705f0ea45ab41905c42abf7b5790, type: 3}
+      isSpeaking: 1
     rightActor:
       setName: 0
       name: 
@@ -27,13 +27,13 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "I\u2019ve done it."
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 235b1847ab9d73141aac99ec98922929, type: 3}
   - leftActor:
       setName: 0
       name: 
       setPortrait: 0
       portrait: {fileID: 0}
-      isSpeaking: 0
+      isSpeaking: 1
     rightActor:
       setName: 0
       name: 
@@ -42,13 +42,13 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "I\u2019ve annoyed my friend into oblivion."
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 0f919611ea8677749af9be505498d9ad, type: 3}
   - leftActor:
       setName: 0
       name: 
       setPortrait: 0
       portrait: {fileID: 0}
-      isSpeaking: 0
+      isSpeaking: 1
     rightActor:
       setName: 0
       name: 
@@ -57,7 +57,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "My \u2026 best friend."
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: fa9e54a50d130964ba607ae7d8c96880, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -65,14 +65,14 @@ MonoBehaviour:
       portrait: {fileID: 0}
       isSpeaking: 0
     rightActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
+      setName: 1
+      name: Walleye
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
+      isSpeaking: 1
     lineVariants:
     - lineString: "There\u2019s a lesson to be learned here."
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 16b10c2766a91e14fa71cf4fde25bcf7, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -84,10 +84,10 @@ MonoBehaviour:
       name: 
       setPortrait: 0
       portrait: {fileID: 0}
-      isSpeaking: 0
+      isSpeaking: 1
     lineVariants:
     - lineString: I want you to apologize.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 7d1b27484c5e08541823d31fcf278a31, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -95,14 +95,14 @@ MonoBehaviour:
       portrait: {fileID: 0}
       isSpeaking: 0
     rightActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
+      setName: 1
+      name: Chi
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      isSpeaking: 1
     lineVariants:
-    - lineString: "You\u2019re the one that told him to annoy me!"
-      lineClip: {fileID: 0}
+    - lineString: "You\u2019re the one that told her to annoy me!"
+      lineClip: {fileID: 8300000, guid: f166958cd15c59241846cb4ea7a33ea8, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -110,35 +110,20 @@ MonoBehaviour:
       portrait: {fileID: 0}
       isSpeaking: 0
     rightActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
-    lineVariants:
-    - lineString: And I want you to mean it.
-      lineClip: {fileID: 0}
-  - leftActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
-    rightActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
+      setName: 1
+      name: Walleye
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
+      isSpeaking: 1
     lineVariants:
     - lineString: And I want you to mean it.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 61cb4ed99036bcf419eba47f97836ae3, type: 3}
   - leftActor:
       setName: 0
       name: 
       setPortrait: 0
       portrait: {fileID: 0}
-      isSpeaking: 0
+      isSpeaking: 1
     rightActor:
       setName: 0
       name: 
@@ -147,7 +132,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "I \u2026"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: f60ff66e63af5534a96db38ebb23b523, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -155,20 +140,20 @@ MonoBehaviour:
       portrait: {fileID: 0}
       isSpeaking: 0
     rightActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
+      setName: 1
+      name: Chi
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      isSpeaking: 1
     lineVariants:
     - lineString: Please stop.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: fb09bcabe545b6d45b0875370b792d4d, type: 3}
   - leftActor:
       setName: 0
       name: 
       setPortrait: 0
       portrait: {fileID: 0}
-      isSpeaking: 0
+      isSpeaking: 1
     rightActor:
       setName: 0
       name: 
@@ -177,7 +162,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "I\u2019m sorry. You\u2019re my best friend in the whole wide kingdom."
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 97bd1f5383fc0594dacf506a163ebdb4, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -189,10 +174,10 @@ MonoBehaviour:
       name: 
       setPortrait: 0
       portrait: {fileID: 0}
-      isSpeaking: 0
+      isSpeaking: 1
     lineVariants:
     - lineString: I am so confused.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 7e064c6ead2042445bd7c1e03010fe5d, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -200,20 +185,20 @@ MonoBehaviour:
       portrait: {fileID: 0}
       isSpeaking: 0
     rightActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
+      setName: 1
+      name: Walleye
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
+      isSpeaking: 1
     lineVariants:
     - lineString: Now give me back all those staves.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: a7f34e002a85f9747878ae36e31727d6, type: 3}
   - leftActor:
       setName: 0
       name: 
       setPortrait: 0
       portrait: {fileID: 0}
-      isSpeaking: 0
+      isSpeaking: 1
     rightActor:
       setName: 0
       name: 
@@ -222,7 +207,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Very well, Mentor.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 4778e9923729e684b9a972f84a6996eb, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -234,10 +219,10 @@ MonoBehaviour:
       name: 
       setPortrait: 0
       portrait: {fileID: 0}
-      isSpeaking: 0
+      isSpeaking: 1
     lineVariants:
     - lineString: Now, get out of my sight, and play somewhere else.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: acb0a40ba8fb2034d9a2ab65c7d1bbe7, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -245,14 +230,14 @@ MonoBehaviour:
       portrait: {fileID: 0}
       isSpeaking: 0
     rightActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
+      setName: 1
+      name: Chi
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 2839700d296ed7841832b3f332c34fad, type: 3}
+      isSpeaking: 1
     lineVariants:
     - lineString: Can we go back to playing mage of the kingdom?
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 5596c05579902d043abc42d42f7663c0, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -260,14 +245,14 @@ MonoBehaviour:
       portrait: {fileID: 0}
       isSpeaking: 0
     rightActor:
-      setName: 0
-      name: 
-      setPortrait: 0
-      portrait: {fileID: 0}
-      isSpeaking: 0
+      setName: 1
+      name: Walleye
+      setPortrait: 1
+      portrait: {fileID: 21300000, guid: 120a7def71bdd1f4f9383044c4a4756d, type: 3}
+      isSpeaking: 1
     lineVariants:
     - lineString: 'And remember:'
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 2bab74974bb009a449064db65d5368f6, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -279,11 +264,11 @@ MonoBehaviour:
       name: 
       setPortrait: 0
       portrait: {fileID: 0}
-      isSpeaking: 0
+      isSpeaking: 1
     lineVariants:
     - lineString: Hats are hats are hats are hats.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 3455630e7f0f5a943b03c54ff23a5934, type: 3}
     - lineString: "Don\u2019t eat the candy wrapper."
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 9e4d5571b4b61bd48b4357d985bc8d82, type: 3}
     - lineString: A bike can be whatever you want it to be.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: c8e6f151969e2a24887582a7dc44115f, type: 3}

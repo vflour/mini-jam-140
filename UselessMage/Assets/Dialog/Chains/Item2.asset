@@ -27,7 +27,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "Mentor, I\u2019m not going to lie \u2026"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: d77ef7702ea45a04f9ce163e7e93d048, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -42,7 +42,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: I am kind of uncomfortable annoying all my friends like this.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 6f6698737b3aae9489cef4ad155fb633, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -57,7 +57,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Fear not, child! Remember, annoying your friends is an act of love!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: abf6fd33076ffd4418995c2fa411fd3e, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -72,7 +72,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Yes, yes I see it now!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: feea239d7e34e154989fc1162bc1cafb, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -88,7 +88,7 @@ MonoBehaviour:
     lineVariants:
     - lineString: "Don\u2019t question it! I\u2019m an adult! Listen to what I have
         to say!"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 24b5883532d12eb459664eb57971026e, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -103,7 +103,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: "Yes, I won\u2019t question it! You\u2019re an adult!"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 7bd668f6b94fc7d4d875ca3937ec4255, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -118,7 +118,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: "Don\u2019t ask for a staff upgrade either!"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 095a8b8cc90e0f740b3d816be071229c, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -134,7 +134,7 @@ MonoBehaviour:
     lineVariants:
     - lineString: "Everyone knows I don\u2019t have enough for every snot nosed brat
         around!"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 797d31b20638efe4ca3efd7dbdb61856, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -149,7 +149,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Yes, no staff upgrades for snot nosed brats!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 56a5b1bfd38b98441b15bba08684496c, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -179,7 +179,7 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Are you telling me you have a staff upgrade?
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 58aedae3d0174cd46a9a9250f3791125, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -194,7 +194,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: '*grumble grumble*'
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 64de0d8ff0fb33d4393af1389b0939c9, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -209,7 +209,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Fine, you can have this one I guess.
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 3211f0c9257e2f844bad1e2e825b9960, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -224,7 +224,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: "But I\u2019m going to take love tokens from you!"
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 7d0bc9e2fae43a144a9d3e096b4b5aad, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -239,7 +239,7 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: So you better go get more!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 48cd978ff31d4b3418918ba1e4dc0fb8, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -254,11 +254,11 @@ MonoBehaviour:
       isSpeaking: 1
     lineVariants:
     - lineString: Also, have you seen my hat?
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 6d9c6a661f6819747a2d00ac5a9cb441, type: 3}
     - lineString: Also, stop eating all my candy!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: f1e2d5b551cf1ff4d9e25d0e122a9ee7, type: 3}
     - lineString: And also, fix my bicycle!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 94ed344a945f3644484718d0148a1886, type: 3}
   - leftActor:
       setName: 0
       name: 
@@ -273,4 +273,4 @@ MonoBehaviour:
       isSpeaking: 0
     lineVariants:
     - lineString: Yes. For the kingdom, I will be annoying!
-      lineClip: {fileID: 0}
+      lineClip: {fileID: 8300000, guid: 4ba96f4e3a1786e4aae7ce511d821a71, type: 3}
