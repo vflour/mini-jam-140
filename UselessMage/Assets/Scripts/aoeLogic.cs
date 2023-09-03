@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class aoeLogic : MonoBehaviour
 {
+    public static Dictionary<ElementType, ElementType> effectiveness = new Dictionary<ElementType, ElementType> 
+    {
+        { ElementType.Fire, ElementType.Grass },
+        { ElementType.Ice, ElementType.Fire },
+        { ElementType.Grass, ElementType.Ice }
+    };
+
     public int WandAnnoyance;
     public float timer = 0;
     public float coolDown = 1;
@@ -11,6 +18,7 @@ public class aoeLogic : MonoBehaviour
     public float knockBack = 1;
     public Collider2D coll;
     public Animator animator;
+    public ElementType elementType;
 
     void FixedUpdate(){
         coll = GetComponent<Collider2D>();
@@ -40,9 +48,26 @@ public class aoeLogic : MonoBehaviour
     {
         if(c.tag == "Enemy"){
             Enemy enemy = c.gameObject.GetComponent<Enemy>();
-            enemy.Annoyance += WandAnnoyance;
-            enemy.Stun = stunStrength;
-            enemy.KnockBack = knockBack;    
+            AnnoyEnemy(enemy);   
         }
+    }
+
+    private float GetDamageMultiplier(Enemy enemy)
+    {
+        if (elementType == ElementType.Neutral) return 1.0f;
+        // if the enemy is weak to the wand
+        if (enemy.elementType == effectiveness[elementType])
+            return 1.5f;
+        // if the wand is weak against the enemy
+        if (elementType == effectiveness[enemy.elementType])
+            return 0.5f;
+        return 1.0f;
+    }
+
+    private void AnnoyEnemy(Enemy enemy)
+    {
+        enemy.Annoyance += (int)(WandAnnoyance * GetDamageMultiplier(enemy));
+        enemy.Stun = stunStrength;
+        enemy.KnockBack = knockBack; 
     }
 }

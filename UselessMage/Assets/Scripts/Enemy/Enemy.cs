@@ -5,6 +5,8 @@ using System;
 
 public class Enemy : MonoBehaviour
 {
+   
+
     public float Stun = 0;
     public float KnockBack = 0;
 
@@ -13,6 +15,7 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D collider;
     public GameObject loveDrop;
+    public ElementType elementType;
 
     public int attackDamage;
     public float damageRange;
@@ -105,7 +108,6 @@ public class Enemy : MonoBehaviour
         {
             bool hit = _annoyance <= value;
             _annoyance = Mathf.Clamp(value, 0, maxAnnoyance);
-            
             if (!hit) return;
              
             bool firstHit = EnemyAnnoyanceState == AnnoyanceState.Idle; 
@@ -136,4 +138,12 @@ public enum AnnoyanceState
     Surprised,
     Annoyed,
     Enraged 
+}
+
+public enum ElementType
+{
+    Grass,
+    Ice,
+    Fire,
+    Neutral
 }
