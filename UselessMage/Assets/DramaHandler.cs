@@ -12,12 +12,13 @@ public class DramaHandler : MonoBehaviour
     {
         if(!GameData.Instance.watchedIntro){
             GameData.Instance.watchedIntro = true;
-            dramaManager.IncrementVariant();
+            dramaManager.SetVariant(GameData.Instance.currentVariant);
             dramaManager.Load(introChain);
         }
 
          if(GameData.Instance.watchRespawnScene){
             GameData.Instance.watchRespawnScene = false;
+            dramaManager.SetVariant(GameData.Instance.currentVariant);
             dramaManager.Load(respawnChain);
         }
     }

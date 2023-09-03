@@ -18,6 +18,7 @@ public class VendorLogic : MonoBehaviour
                 GameData.Instance.collectedWands[WandNumber] = true;
                 Debug.Log("Bought wand " + WandNumber);
                 GameData.Instance.currency -= WandPrice;
+                dramaManager.SetVariant(GameData.Instance.currentVariant);
                 dramaManager.Load(dramaChain);
             }
         }
