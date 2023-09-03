@@ -13,8 +13,10 @@ public class PlayerLogic : MonoBehaviour
     private Vector2 movementDirection;
     public GameObject aoeRadiusGFX;
     public int maxhealth;
+    
     public CameraFollow follow;
     private int _health;
+    public AudioSource hurtSFX;
 
     public bool IsDefeated => _health <= 0;
     
@@ -28,6 +30,10 @@ public class PlayerLogic : MonoBehaviour
         {
             var clampedValue = Mathf.Clamp(value, 0, maxhealth);
             if (_health == clampedValue) return;
+           
+            if (_health > value && !hurtSFX.isPlaying)
+                hurtSFX.Play();
+            
             _health = clampedValue;             
             
             if (IsDefeated)

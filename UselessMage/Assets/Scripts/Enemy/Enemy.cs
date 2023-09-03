@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
 
     public int attackDamage;
     public float damageRange;
+    
+    public AudioSource hurtSFX;
 
     public Dictionary<ElementType, float> effectivenessMultiplier = new Dictionary<ElementType, float>();
 
@@ -140,6 +142,7 @@ public class Enemy : MonoBehaviour
             _annoyance = Mathf.Clamp(value, 0, maxAnnoyance);
             if (!hit) return;
              
+            hurtSFX.Play();
             bool firstHit = EnemyAnnoyanceState == AnnoyanceState.Idle; 
             if (firstHit)
                 EnemyAnnoyanceState = AnnoyanceState.Surprised;
