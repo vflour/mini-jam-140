@@ -13,7 +13,6 @@ public class PlayerLogic : MonoBehaviour
     private Vector2 movementDirection;
     public GameObject aoeRadiusGFX;
     public int maxhealth;
-    
     public CameraFollow follow;
     private int _health;
 

@@ -6,6 +6,7 @@ public class LovePickup : MonoBehaviour
 {
     private bool _collected = false;
     private Animator animator;
+    public AudioSource pickupSFX;
 
     void Start()
     {
@@ -19,6 +20,7 @@ public class LovePickup : MonoBehaviour
             _collected = true;
             GameData.Instance.currency += 1;
             animator.Play("LovePickup", 0);
+            pickupSFX.Play();
         }
     }
 

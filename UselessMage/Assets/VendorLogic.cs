@@ -9,6 +9,7 @@ public class VendorLogic : MonoBehaviour
     public DialogManager dramaManager;
     public DialogChain dramaChain;
     public HudManager hudManager;
+    public AudioSource buySFX;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,6 +24,7 @@ public class VendorLogic : MonoBehaviour
                 GameData.Instance.currency -= WandPrice;
                 dramaManager.SetVariant(GameData.Instance.currentVariant);
                 dramaManager.Load(dramaChain);
+                buySFX.Play();
             }
         }
     }

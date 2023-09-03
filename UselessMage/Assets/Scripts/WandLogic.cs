@@ -10,6 +10,7 @@ public class WandLogic : MonoBehaviour
     public float cooldown = 0;
     public GameObject[] summonTypeGFX;
     private GameObject aoeRadiusGFX;
+    public AudioSource spellSFX;
 
     public void EquipWand(int wand)
     {
@@ -46,7 +47,6 @@ public class WandLogic : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Debug.Log("Firing");
             // get direction of mouse
             var direction = camera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             direction.Normalize();
@@ -55,6 +55,7 @@ public class WandLogic : MonoBehaviour
             // apply pos and rot to gfx
             wandGFX.transform.position = transform.position;
             wandGFX.transform.rotation = Quaternion.Euler(0, 0, rot);
+            spellSFX.Play();
 
             cooldown = 0.5f;
             wandGFX.ToggleEnabled(true); 
