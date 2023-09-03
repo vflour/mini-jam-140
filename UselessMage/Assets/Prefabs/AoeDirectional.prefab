@@ -4960,6 +4960,7 @@ MonoBehaviour:
   knockBack: 120
   coll: {fileID: 0}
   animator: {fileID: 0}
+  elementType: 3
 --- !u!58 &6907775575129867216
 CircleCollider2D:
   m_ObjectHideFlags: 0

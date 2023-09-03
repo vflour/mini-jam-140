@@ -62,8 +62,6 @@ public class PlayerLogic : MonoBehaviour
     void Update()
     {
         movementDirection = new Vector2(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"));
-
-            
     }
 
     void FixedUpdate() {

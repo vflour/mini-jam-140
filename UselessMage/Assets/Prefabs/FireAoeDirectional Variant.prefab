@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 2a93333428b4b371781ba8e476a6b69b, type: 3}
+    - target: {fileID: 7758071091403407541, guid: 55ef6ae925517761cb39046495e1ed1c, type: 3}
+      propertyPath: elementType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8116550269076755581, guid: 55ef6ae925517761cb39046495e1ed1c, type: 3}
       propertyPath: m_Name
       value: FireAoeDirectional Variant
