@@ -22,6 +22,8 @@ public class EnemyGenerator : MonoBehaviour
         var enemyData = enemy.GetComponent<Enemy>();
         enemyData.target = target;
         enemyData.loveDrop = loveDrop;
+        enemyData.roomData = roomData;
+        
         roomData.enemyCount++;
     }
 
@@ -38,9 +40,23 @@ public class EnemyGenerator : MonoBehaviour
         }
 
     }
+    
+    public float spawnRate = 10f;
+    private float _spawnCooldown = 0;
+
+    void Update()
+    {
+        _spawnCooldown -= Time.deltaTime;
+        if (_spawnCooldown <= 0)
+        {
+            _spawnCooldown = spawnRate;
+            GenerateEnemies();
+        }
+    }
 
     void Awake()
     {
+        _spawnCooldown = spawnRate;
         GetEnemyAssets();
     }
 
