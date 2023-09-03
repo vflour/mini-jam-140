@@ -53,9 +53,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 0.4
   aoeRadiusGFX: {fileID: 0}
-  maxhealth: 2
+  maxhealth: 1000
   follow: {fileID: 0}
   healthtext: {fileID: 263016946069624417}
+  deathTime: 1
+  peakTime: 0.15
 --- !u!58 &7980167374602177061
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -187,7 +189,7 @@ Transform:
   m_GameObject: {fileID: 2117159806725967529}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.054, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0611, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -751,9 +753,9 @@ Transform:
   m_GameObject: {fileID: 5819953963236384250}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0012, y: -0.0626, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0.0008, y: 0.0032, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3359517902154673844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -798,7 +800,7 @@ SpriteRenderer:
   m_SortingLayerID: -2121133745
   m_SortingLayer: 1
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 8aeed7511057b674bb57ab3c884c80c0, type: 3}
+  m_Sprite: {fileID: -349750509, guid: d00577cf8061be5089b3472fd4749957, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
