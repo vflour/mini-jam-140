@@ -178,10 +178,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3884668690299985495}
-  - component: {fileID: 5401986070177451181}
   - component: {fileID: 5148102344649281105}
   - component: {fileID: 8610981428640800709}
   - component: {fileID: 5763388661367077723}
+  - component: {fileID: 8901480203930498678}
   m_Layer: 6
   m_Name: Chi
   m_TagString: Enemy
@@ -208,30 +208,6 @@ Transform:
   - {fileID: 2233922374599197935}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5401986070177451181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4679299292504915576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cad1a0d1b23b7543ab8aa0d15464faca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Stun: 0
-  KnockBack: 0
-  target: {fileID: 0}
-  moveSpeed: 0.2
-  loveDrop: {fileID: 0}
-  elementType: 0
-  roomData: {fileID: 0}
-  attackDamage: 1
-  damageRange: 0.15
-  _annoyanceState: 0
-  maxAnnoyance: 100
-  enemyAnimator: {fileID: 0}
 --- !u!58 &5148102344649281105
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -315,6 +291,35 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8901480203930498678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4679299292504915576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d758cb0a1f189033eb51358a3da7df28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stun: 0
+  KnockBack: 0
+  target: {fileID: 0}
+  moveSpeed: 0
+  loveDrop: {fileID: 3153126387048065687, guid: 7f571a95fa7301d88818d00da7e5c381, type: 3}
+  elementType: 3
+  roomData: {fileID: 0}
+  attackDamage: 0
+  damageRange: 0
+  _annoyanceState: 0
+  maxAnnoyance: 100
+  enemyAnimator: {fileID: 0}
+  aoeRadiusObjects:
+  - {fileID: 3759368894166967462, guid: 0233df7e90c5671a495a1fb8d4203521, type: 3}
+  - {fileID: 6297590042291534016, guid: f9298f4624c720249ba82db244a0e248, type: 3}
+  - {fileID: 9071344609902210184, guid: ee21eaa062f3f89c1a780446ecac370d, type: 3}
+  elementSwitchCooldownTime: 2
 --- !u!1 &5172121177794553657
 GameObject:
   m_ObjectHideFlags: 0

@@ -66,7 +66,9 @@ public class aoeLogic : MonoBehaviour
 
     private void AnnoyEnemy(Enemy enemy)
     {
-        float elemMulti = GetElementMultiplier(enemy);
+        float effectiveness = enemy.effectivenessMultiplier.ContainsKey(elementType) ? enemy.effectivenessMultiplier[elementType] : 1;
+        float elemMulti = GetElementMultiplier(enemy)*effectiveness;
+
         enemy.Annoyance += (int)(WandAnnoyance * elemMulti);
         enemy.Stun = (int)(stunStrength * elemMulti);
         if (elemMulti > 1)

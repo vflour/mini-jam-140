@@ -21,13 +21,16 @@ public class Enemy : MonoBehaviour
     public int attackDamage;
     public float damageRange;
 
+    public Dictionary<ElementType, float> effectivenessMultiplier = new Dictionary<ElementType, float>();
+
     private void DropLove()
     {
         var drop = Instantiate(loveDrop, transform.parent);
         drop.transform.position = transform.position;
     }
 
-    void Start(){
+    protected virtual void Start()
+    {
         rb = this.GetComponent<Rigidbody2D>();
         enemyAnimator = GetComponent<Animator>();
         collider = GetComponent<Collider2D>();
