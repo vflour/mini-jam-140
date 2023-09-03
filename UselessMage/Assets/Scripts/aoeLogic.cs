@@ -52,7 +52,7 @@ public class aoeLogic : MonoBehaviour
         }
     }
 
-    private float GetDamageMultiplier(Enemy enemy)
+    private float GetElementMultiplier(Enemy enemy)
     {
         if (elementType == ElementType.Neutral) return 1.0f;
         // if the enemy is weak to the wand
@@ -66,8 +66,11 @@ public class aoeLogic : MonoBehaviour
 
     private void AnnoyEnemy(Enemy enemy)
     {
-        enemy.Annoyance += (int)(WandAnnoyance * GetDamageMultiplier(enemy));
-        enemy.Stun = stunStrength;
+        float elemMulti = GetElementMultiplier(enemy);
+        enemy.Annoyance += (int)(WandAnnoyance * elemMulti);
+        enemy.Stun = (int)(stunStrength * elemMulti);
+        if (elemMulti > 1)
+            enemy.TriggerElementStun();
         enemy.KnockBack = knockBack; 
     }
 }
