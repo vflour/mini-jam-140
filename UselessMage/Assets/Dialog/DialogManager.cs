@@ -11,7 +11,7 @@ public class DialogManager : MonoBehaviour
     public bool debugLoad;
     private DialogChain currentDialogChain;
     private int currentIndex;
-    private int currentVariant = -1;
+    private int currentVariant = 0;
 
     public void Start()
     {
