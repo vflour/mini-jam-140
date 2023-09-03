@@ -43,6 +43,9 @@ public class Enemy : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 Stun--;
             }
+            else {
+                enemyAnimator.SetBool("Stunned", false);
+            }
 
             if(KnockBack>0){
                 rb.AddRelativeForce(Vector3.Normalize(opposite) * KnockBack * 0.1f, ForceMode2D.Impulse);
@@ -115,7 +118,7 @@ public class Enemy : MonoBehaviour
                 EnemyAnnoyanceState = AnnoyanceState.Surprised;
             else if (_annoyance >= maxAnnoyance)
                 EnemyAnnoyanceState = AnnoyanceState.Enraged;
-            else if (0.5f <= _annoyance/(float)maxAnnoyance )
+            else if (0.5f <= _annoyance/(float)maxAnnoyance)
                 EnemyAnnoyanceState = AnnoyanceState.Annoyed;
                 
         }
@@ -123,6 +126,12 @@ public class Enemy : MonoBehaviour
         {
             return _annoyance;
         }
+    }
+
+    public void TriggerElementStun()
+    {
+        if (EnemyAnnoyanceState != AnnoyanceState.Enraged)
+            enemyAnimator.Play("ElementStunEnter", 0, 0);
     }
 
     public int maxAnnoyance = 100; 
