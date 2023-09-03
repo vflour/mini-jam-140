@@ -82,7 +82,10 @@ public class PlayerLogic : MonoBehaviour
             else if(_deathLungeTime > 0)
                 rb.gravityScale = 1f;
             else
+            {
                 SceneManager.LoadScene("hub"); 
+                GameData.Instance.watchRespawnScene = true;
+            }
             
             _deathLungeTime -= Time.deltaTime;
         }

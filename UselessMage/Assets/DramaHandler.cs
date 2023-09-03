@@ -7,7 +7,7 @@ public class DramaHandler : MonoBehaviour
     public DialogManager dramaManager;
     public DialogChain introChain;
     public DialogChain respawnChain;
-    
+
     void Update()
     {
         if(!GameData.Instance.watchedIntro){
@@ -15,8 +15,8 @@ public class DramaHandler : MonoBehaviour
             dramaManager.Load(introChain);
         }
 
-         if(!GameData.Instance.watchRespawnScene){
-            GameData.Instance.watchedIntro = false;
+         if(GameData.Instance.watchRespawnScene){
+            GameData.Instance.watchRespawnScene = false;
             dramaManager.Load(respawnChain);
         }
     }

@@ -255,7 +255,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WandNumber: 1
-  WandPrice: 0
+  WandPrice: 50
+  dramaManager: {fileID: 1760640374}
+  dramaChain: {fileID: 11400000, guid: 58ff5bd133ff1444b9238fb3cbf3dd87, type: 2}
 --- !u!61 &157704427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -564,6 +566,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d93ed4fc0edae4f86bdc88fe188268, type: 3}
+--- !u!1 &770963008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770963010}
+  - component: {fileID: 770963009}
+  m_Layer: 0
+  m_Name: Intro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &770963009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770963008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af902ca3e6348c148a69d5e976f9f88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dramaManager: {fileID: 1760640374}
+  introChain: {fileID: 11400000, guid: d8f6a9a25d64efb498e332fa6c77eb2f, type: 2}
+  respawnChain: {fileID: 11400000, guid: 299d20e15e8106d4db72323c3d31df97, type: 2}
+--- !u!4 &770963010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770963008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.8775556, y: -2.6456857, z: 0.0009797902}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &875882807
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +737,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WandNumber: 2
   WandPrice: 100
+  dramaManager: {fileID: 1760640374}
+  dramaChain: {fileID: 11400000, guid: 9ca876333ebc0fc47af71baad5f334f3, type: 2}
 --- !u!61 &967228274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1203,6 +1254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WandNumber: 3
   WandPrice: 250
+  dramaManager: {fileID: 1760640374}
+  dramaChain: {fileID: 11400000, guid: d0c85ee3008a11f46b02a2914a7076cd, type: 2}
 --- !u!61 &1303570780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1988,6 +2041,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6558278417990187706, guid: ff7b526bc4036ae49bc2b304985683e1, type: 3}
   m_PrefabInstance: {fileID: 1356707095}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1760640374 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9142907113737904426, guid: 3d8077fee3dfbea49bcb054f6c1d3eae, type: 3}
+  m_PrefabInstance: {fileID: 1809555633}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339eed4ec43f4af4290137ce64cc7601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1809555633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2231,3 +2295,4 @@ SceneRoots:
   - {fileID: 967228275}
   - {fileID: 1303570781}
   - {fileID: 1321653687}
+  - {fileID: 770963010}
