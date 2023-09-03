@@ -4301,8 +4301,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Credits\n\nProgramming: \nAmy Jadebrew, vFlour, Josefnpat\n\nArt:\nMack,
-    Vampy, Josefnpat\n\nMaps:\nMack\n\nMusic:\nAlexander Nakarada\n\nStory: \nJosefnpat\n\nVoice
-    Over:\nTimmy & Tommy\n\nLurker:\nLem"
+    starfruitboba, Josefnpat\n\nMaps:\nMack, Amy Jadebrew\n\nMusic:\nAlexander Nakarada\n\nStory:
+    \nJosefnpat\n\nVoice Over:\nJosefnpat, starfruitboba, Abby Harding\n\nLurker:\nLem"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1b9b9b92f92714648bd071a41d785478, type: 2}
   m_sharedMaterial: {fileID: -8427201872107312154, guid: 1b9b9b92f92714648bd071a41d785478, type: 2}

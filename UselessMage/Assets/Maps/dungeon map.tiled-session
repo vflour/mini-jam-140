@@ -322,11 +322,11 @@
     "last.externalTilesetPath": "C:/Users/IceBr/Pictures/mack things/art/gamejams/dungeon/UselessMage Tiled Project/Tiles",
     "last.imagePath": "C:/Users/IceBr/Pictures/mack things/art/gamejams/dungeon/UselessMage Tiled Project/Tiles",
     "map.fixedSize": true,
-    "map.height": 16,
+    "map.height": 64,
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 10,
     "map.tileWidth": 10,
-    "map.width": 16,
+    "map.width": 64,
     "openFiles": [
         "Tiles/thicket tiles.tsx",
         "Map Parts/Ice Caves/hub.tmx"
