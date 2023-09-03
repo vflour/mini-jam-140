@@ -6,6 +6,9 @@ public class VendorLogic : MonoBehaviour
 {
     public int WandNumber;
     public int WandPrice;
+    public DialogManager dramaManager;
+    public DialogChain dramaChain;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
        
@@ -15,6 +18,7 @@ public class VendorLogic : MonoBehaviour
                 GameData.Instance.collectedWands[WandNumber] = true;
                 Debug.Log("Bought wand " + WandNumber);
                 GameData.Instance.currency -= WandPrice;
+                dramaManager.Load(dramaChain);
             }
         }
     }
